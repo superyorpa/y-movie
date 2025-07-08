@@ -14,7 +14,7 @@ const AboutPage = () => {
         </p>
 
         <div className="About-links">
-          <a href="https://github.com/username" target="_blank" rel="noreferrer">
+          <a href="https://github.com/superyorpa" target="_blank" rel="noreferrer">
             🌐 View on GitHub
           </a>
           <a href="https://www.themoviedb.org/" target="_blank" rel="noreferrer">
