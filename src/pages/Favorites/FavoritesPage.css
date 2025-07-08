@@ -1,0 +1,117 @@
+/* FAVORITES PAGE */
+.Favorites-page {
+  padding: 40px;
+  background-color: #282c34;
+  min-height: 100vh;
+}
+
+.Favorites-page .Favorites-head {
+  margin-top: 50px;
+  font-size: 3rem;
+  color: white;
+}
+
+.Favorites-page .Movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Favorites-page .Movie-wrapper {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.Favorites-page .Movie-wrapper:hover {
+  transform: translateY(-5px);
+}
+
+.Favorites-page.Movie-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.Favorites-page .Movie-info {
+  padding: 12px;
+  text-align: center;
+}
+
+.Favorites-page .Movie-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.Favorites-page .Movie-date, .Movie-rate {
+  color: #666;
+  font-size: 14px;
+}
+
+
+/* REMOVE FAVORITES */
+.Favorites-page .Movie-wrapper {
+  position: relative;
+}
+
+.Favorites-page .Favorite-button {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  padding: 6px 10px;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.Favorites-page .Favorite-button:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .Favorites-head {
+    font-size: 1.8rem;
+  }
+
+  .Movie-container {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .Movie-wrapper {
+    max-width: 160px;
+  }
+
+  .Movie-image {
+    height: 220px;
+  }
+
+  .Favorite-button {
+    width: 24px;
+    height: 24px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Movie-container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+  }
+
+  .Movie-image {
+    height: 200px;
+  }
+}

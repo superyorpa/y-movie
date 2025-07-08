@@ -1,0 +1,54 @@
+/* TRENDING PAGE */
+.Trending-page {
+  background: #111;
+  min-height: 100vh;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+.Trending-hero {
+  background-color: #222;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+
+.Trending-title {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.Trending-subtitle {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.Empty-message {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .Movie-container {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .Movie-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Trending-title {
+    font-size: 2rem;
+  }
+  .Movie-image {
+    height: 180px;
+  }
+}

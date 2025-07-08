@@ -1,0 +1,91 @@
+/* CATEGORY PAGE */
+.Category-page {
+  background: #111;
+  min-height: 100vh;
+  color: #fff;
+  padding-bottom: 40px;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* HERO SECTION */
+.Category-hero {
+  background-color: #222;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+
+.Category-title {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.Category-subtitle {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.Empty-message {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .Category-title {
+    font-size: 1.8rem;
+  }
+
+  .Category-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .Movie-container {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .Movie-wrapper {
+    max-width: 160px;
+  }
+
+  .Movie-image {
+    height: 220px;
+  }
+
+  .Movie-title {
+    font-size: 0.9rem;
+  }
+
+  .Movie-rate {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Category-hero {
+    padding: 40px 10px;
+  }
+
+  .Movie-container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 8px;
+  }
+
+  .Movie-wrapper {
+    max-width: 140px;
+  }
+
+  .Movie-image {
+    height: 200px;
+  }
+
+  .Movie-title {
+    font-size: 0.85rem;
+  }
+}
